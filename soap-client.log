@@ -1,0 +1,31 @@
+https://sm-introsde-assignment-3.herokuapp.com/ws/people?wsdl
+M7: Avaiable measurement types 
+ response: [height, weight]
+
+M1: People list size, 
+ response 101
+
+M2: Retrieved person with id 1
+ response: Person [birthdate=13/07/2000, id=1, firstname=Samuele, lastname=Malavasi, healthHistory=introsde.assignment.soap.ws.Person$HealthHistory@5479e3f, currentHealth=introsde.assignment.soap.ws.Person$CurrentHealth@27082746]
+
+M3: p1 updated succesfully! set firstname: Samuele and lastname:Malavasi
+ response Person [birthdate=13/07/2000, id=1, firstname=Samuele, lastname=Malavasi, healthHistory=introsde.assignment.soap.ws.Person$HealthHistory@2d6d8735, currentHealth=introsde.assignment.soap.ws.Person$CurrentHealth@ba4d54]
+
+M4: p2 created! 
+ response:Person [birthdate=15/7/1991, id=205, firstname=Davide, lastname=Falezza, healthHistory=introsde.assignment.soap.ws.Person$HealthHistory@6979e8cb, currentHealth=introsde.assignment.soap.ws.Person$CurrentHealth@763d9750]
+
+M5: p2 deleted!
+response: Person [birthdate=15/7/1991, id=205, firstname=Davide, lastname=Falezza, healthHistory=introsde.assignment.soap.ws.Person$HealthHistory@6979e8cb, currentHealth=introsde.assignment.soap.ws.Person$CurrentHealth@763d9750]
+
+M6: person whose id is 1 history size,
+ response size: 6
+
+M8: Retrieved measure with id 47
+ response: Measure [id=47, dateRegistered=22/10/1999, measureType=height, measureValue=173.93837345818, measureValueType=double, personId=1]
+
+M9: measure stored!
+ response: Measure [id=285, dateRegistered=08/03/1992, measureType=height, measureValue=200.0, measureValueType=double, personId=1]
+
+M10: measure updated! set value to 199
+ response: Measure [id=285, dateRegistered=08/03/1992, measureType=height, measureValue=199, measureValueType=double, personId=1]
+
