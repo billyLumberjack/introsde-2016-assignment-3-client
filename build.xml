@@ -21,14 +21,8 @@
 	<property name="build.dir" value="build" />
 	<property name="src.dir" value="src" />
 
-	<!-- paths where ivy libraries will be downloaded, use them as classpathref in your compilation and running tasks  -->
-	<path id="lib.path.id">
-		<fileset dir="${lib.dir}" />
-	</path>
-
 
 	<path id="run.path.id">
-		<path refid="lib.path.id" />
 		<fileset dir="${build.dir}">
 			<include name="*.class" />
 			<include name="**/*.class" />
