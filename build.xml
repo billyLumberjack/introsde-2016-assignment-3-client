@@ -48,7 +48,7 @@
 		</copy>	
 	</target>
 	
-	<target name="start" depends="compile">
+	<target name="execute.client" depends="compile">
         <echo message="starting client..." />
         <java classname="introsde.assignment.soap.client.Client" classpath="${build.dir}" fork="true">
         </java>
